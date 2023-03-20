@@ -1,0 +1,25 @@
+.background-color-1{ background-color: #CCD6F6; }
+.background-color-2{ background-color: #6FF9DA; }
+
+.color1{ color: #CCD6F6; }
+.color2{ color: #6FF9DA; }
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.flex-block{
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .flex-block{
+    display: block !important;
+  }
+}
+
+
