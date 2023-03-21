@@ -4,16 +4,6 @@ export const Works = () => {
 
   const [works, setWorks] = useState([
     {
-      name: "Fryeat",
-      image: "fryeat.png",
-      description: "Web Application to help family and friends decide what to eat by creating polls",
-      languages: [
-        "Java (Apring Boot)",
-        "MySQL",
-        "React JS"
-      ]
-    },
-    {
       name: "Car Poolando",
       image: "carpoolando.png",
       description: "This is an open source project for car pooling. If you have a company and want to help people comes to you fastly, you can downlaod this project and configure it as you want",
@@ -21,17 +11,30 @@ export const Works = () => {
         "Python (Flask)",
         "MySQL",
         "React JS"
-      ]
+      ],
+      be_link: "https://github.com/albedim/MyPooling-BE",
     },
     {
       name: "FightClubMC",
-      image: "fightclubmc",
+      image: "fightclubmc.png",
       description: "Web app for a minecraft server. Create discussions, answer players' questions and help others",
       languages: [
         "Python (Flask)",
         "MySQL",
         "React JS"
-      ]
+      ],
+      be_link: "https://github.com/albedim/FightClubMC-BE",
+    },
+    {
+      name: "Fryeat",
+      image: "fryeat.png",
+      description: "Web Application to help family and friends decide what to eat by creating polls",
+      languages: [
+        "Java (Apring Boot)",
+        "MySQL",
+        "React JS"
+      ],
+      be_link: "https://github.com/albedim/Fryeat",
     }
   ])
 
@@ -39,10 +42,10 @@ export const Works = () => {
     <div className="flex-wrap-box" style={{ padding: 84, flexWrap: 'wrap' }}>
       {
         works.map(work => (
-          <div style={{ padding: 24 }}>
+          <div className="hover" onClick={(e) => window.location.href = work.be_link} style={{padding: 24 }}>
             <div className="background-color-3" style={{ padding: 34, borderRadius: 8, height: 424, width: 284 }}>
               <div>
-
+                <img style={{borderRadius: 10, width: 284}} src={require("./" + work.image)} alt="" />
               </div>
               <div>
                 <h2 style={{ fontSize: 24, color: 'white', fontFamily: 'Rubik' }}>{work.name}</h2>

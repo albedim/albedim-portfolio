@@ -37,4 +37,13 @@ body{
   display: flex;
 }
 
+.hover:hover{
+  margin-top: 24px;
+  transition: 0.4s;
+}
+
+.hover{
+  transition: 0.4s;
+}
+
 

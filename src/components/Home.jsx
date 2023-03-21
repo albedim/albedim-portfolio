@@ -46,14 +46,14 @@ export const Home = () => {
             />
           </div>
           <div style={{ marginTop: 38, height: 140, alignItems: 'center', justifyContent: 'space-around', display: 'flex' }}>
-            <button onClick={(e) => { setStatus(true); setTimeout(() => { window.scrollTo(0, 734) }, 100) }} className='background-color-2' style={{ borderBottomLeftRadius: 4, borderTopRightRadius: 4, outline: 'none', border: 'none', fontFamily: 'Rubik', cursor: 'pointer', paddingRight: 34, paddingLeft: 34, paddingBottom: 14, paddingTop: 14, display: buttonDisplay }}>More</button>
+            <button onClick={(e) => { setStatus(true); setTimeout(() => { window.scrollTo(0, 834) }, 100) }} className='background-color-2' style={{ borderBottomLeftRadius: 4, borderTopRightRadius: 4, outline: 'none', border: 'none', fontFamily: 'Rubik', cursor: 'pointer', paddingRight: 34, paddingLeft: 34, paddingBottom: 14, paddingTop: 14, display: buttonDisplay }}>More</button>
           </div>
         </div>
       </div>
       {
         status ? (
           <>
-            <div style={{height: 648, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
+            <div style={{height: 728, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
               <div style={{backgroundColor: '#0A192F', height: '100vh', width: '100vw'}}>
                 <div style={{ height: 64, justifyContent: 'space-around', display: 'flex'}} >
                   <div style={{ height: 74, borderBottom: "4px solid #6FF9DA"}} >
