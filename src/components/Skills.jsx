@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export const Skills = () => {
 
-  const skills = [
+  const [skills, setSkills] = useState([
     {label: "React JS", value: "64%"},
     {label: "React Native", value: "40%"},
     {label: "Python (Flask)", value: "78%"},
@@ -10,7 +10,7 @@ export const Skills = () => {
     {label: "MySQL", value: "64%"},
     {label: "PHP", value: "43%"},
     {label: "REST SERVICE", value: "78%"},
-  ]
+  ])
 
   const [width, setWidth] = useState(false)
 
