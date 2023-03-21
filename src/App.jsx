@@ -5,7 +5,7 @@ import { Home } from './components/Home';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/albedim-portfolio'>
       <Routes>
         <Route path='/' element={<><Home/></>}/>
       </Routes>
