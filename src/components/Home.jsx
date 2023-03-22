@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { IonIcon } from 'react-ion-icon'
 import { TypeAnimation } from 'react-type-animation'
+import { Contact } from './Contact'
 import { Skills } from './Skills'
 import './styles/style.css'
 import { WhoAmI } from './WhoAmI'
@@ -53,32 +54,44 @@ export const Home = () => {
       {
         status ? (
           <>
-            <div style={{height: 728, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
-              <div style={{backgroundColor: '#0A192F', height: '100vh', width: '100vw'}}>
-                <div style={{ height: 64, justifyContent: 'space-around', display: 'flex'}} >
-                  <div style={{ height: 74, borderBottom: "4px solid #6FF9DA"}} >
-                    <h2 style={{fontFamily: 'Rubik', color: 'white', fontSize: 30}}>About</h2>
+            <div style={{ height: 728, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
+              <div style={{ backgroundColor: '#0A192F', height: '100vh', width: '100vw' }}>
+                <div style={{ height: 64, justifyContent: 'space-around', display: 'flex' }} >
+                  <div style={{ height: 74, borderBottom: "4px solid #6FF9DA" }} >
+                    <h2 style={{ fontFamily: 'Rubik', color: 'white', fontSize: 30 }}>About</h2>
                   </div>
                 </div>
                 <div style={{ marginTop: 74, justifyContent: 'space-around', backgroundColor: '#0A192F', height: '100vh', width: '100vw', display: 'flex' }}>
-                <div>
-                  <WhoAmI/>
-                </div>
-                <div>
-                  <Skills/>
-                </div>
+                  <div>
+                    <WhoAmI />
+                  </div>
+                  <div>
+                    <Skills />
+                  </div>
                 </div>
               </div>
             </div>
-            <div style={{height: 600, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
-              <div style={{backgroundColor: '#0A192F', height: '100vh', width: '100vw'}}>
-                <div style={{ height: 64, justifyContent: 'space-around', display: 'flex'}} >
-                  <div style={{ height: 74, borderBottom: "4px solid #6FF9DA"}} >
-                    <h2 style={{fontFamily: 'Rubik',  color: 'white', fontSize: 30}}>Works</h2>
+            <div style={{ border: '1px solid red', height: 800, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
+              <div style={{ backgroundColor: '#0A192F', height: '100vh', width: '100vw' }}>
+                <div style={{ height: 64, justifyContent: 'space-around', display: 'flex' }} >
+                  <div style={{ height: 74, borderBottom: "4px solid #6FF9DA" }} >
+                    <h2 style={{ fontFamily: 'Rubik', color: 'white', fontSize: 30 }}>Works</h2>
                   </div>
                 </div>
                 <div style={{ marginTop: 74, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
-                  <Works/>
+                  <Works />
+                </div>
+              </div>
+            </div>
+            <div style={{ height: 600, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
+              <div style={{ backgroundColor: '#0A192F', height: '100vh', width: '100vw' }}>
+                <div style={{ height: 64, justifyContent: 'space-around', display: 'flex' }} >
+                  <div style={{ height: 74, borderBottom: "4px solid #6FF9DA" }} >
+                    <h2 style={{ fontFamily: 'Rubik', color: 'white', fontSize: 30 }}>Works</h2>
+                  </div>
+                </div>
+                <div style={{ marginTop: 74, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
+                  <Contact />
                 </div>
               </div>
             </div>
