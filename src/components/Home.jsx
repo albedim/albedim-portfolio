@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { IonIcon } from 'react-ion-icon'
 import { TypeAnimation } from 'react-type-animation'
 import { Contact } from './Contact'
+import { Footer } from './Footer'
 import { Skills } from './Skills'
 import './styles/style.css'
 import { WhoAmI } from './WhoAmI'
@@ -71,7 +72,7 @@ export const Home = () => {
                 </div>
               </div>
             </div>
-            <div style={{ border: '1px solid red', height: 800, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
+            <div style={{border: "1px solid red", height: 900, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
               <div style={{ backgroundColor: '#0A192F', height: '100vh', width: '100vw' }}>
                 <div style={{ height: 64, justifyContent: 'space-around', display: 'flex' }} >
                   <div style={{ height: 74, borderBottom: "4px solid #6FF9DA" }} >
@@ -87,13 +88,16 @@ export const Home = () => {
               <div style={{ backgroundColor: '#0A192F', height: '100vh', width: '100vw' }}>
                 <div style={{ height: 64, justifyContent: 'space-around', display: 'flex' }} >
                   <div style={{ height: 74, borderBottom: "4px solid #6FF9DA" }} >
-                    <h2 style={{ fontFamily: 'Rubik', color: 'white', fontSize: 30 }}>Works</h2>
+                    <h2 style={{ fontFamily: 'Rubik', color: 'white', fontSize: 30 }}>Contact me</h2>
                   </div>
                 </div>
-                <div style={{ marginTop: 74, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
+                <div style={{ marginTop: 34, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
                   <Contact />
                 </div>
               </div>
+            </div>
+            <div style={{backgroundColor: '#0A192F' }}>
+              <Footer/>
             </div>
           </>
         ) : (
