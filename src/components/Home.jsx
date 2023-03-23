@@ -55,14 +55,14 @@ export const Home = () => {
       {
         status ? (
           <>
-            <div style={{ height: 728, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
-              <div style={{ backgroundColor: '#0A192F', height: '100vh', width: '100vw' }}>
+            <div style={{ justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
+              <div style={{ backgroundColor: '#0A192F', width: '100vw' }}>
                 <div style={{ height: 64, justifyContent: 'space-around', display: 'flex' }} >
                   <div style={{ height: 74, borderBottom: "4px solid #6FF9DA" }} >
                     <h2 style={{ fontFamily: 'Rubik', color: 'white', fontSize: 30 }}>About</h2>
                   </div>
                 </div>
-                <div style={{ marginTop: 74, justifyContent: 'space-around', backgroundColor: '#0A192F', height: '100vh', width: '100vw', display: 'flex' }}>
+                <div className='flex-block' style={{ marginTop: 74, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw'}}>
                   <div>
                     <WhoAmI />
                   </div>
@@ -72,15 +72,17 @@ export const Home = () => {
                 </div>
               </div>
             </div>
-            <div style={{border: "1px solid red", height: 900, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
-              <div style={{ backgroundColor: '#0A192F', height: '100vh', width: '100vw' }}>
+            <div style={{justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
+              <div style={{marginTop: 84, width: '100vw' }}>
                 <div style={{ height: 64, justifyContent: 'space-around', display: 'flex' }} >
-                  <div style={{ height: 74, borderBottom: "4px solid #6FF9DA" }} >
-                    <h2 style={{ fontFamily: 'Rubik', color: 'white', fontSize: 30 }}>Works</h2>
+                  <div style={{height: 74, borderBottom: "4px solid #6FF9DA" }} >
+                    <h2 style={{fontFamily: 'Rubik', color: 'white', fontSize: 30 }}>Works</h2>
                   </div>
                 </div>
-                <div style={{ marginTop: 74, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
-                  <Works />
+                <div style={{marginTop: 74, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
+                  <div className="flex-wrap-box" style={{padding: 84, flexWrap: 'wrap' }}>
+                    <Works />
+                  </div>
                 </div>
               </div>
             </div>

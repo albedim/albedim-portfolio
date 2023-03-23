@@ -22,10 +22,26 @@ body{
   .flex-block{
     display: block !important;
   }
+  .w-mobile{
+    display: block !important;
+  }
+  .w-pc{
+    display: none !important;
+  }
 }
+
+.w-pc{
+  display: block;
+}
+
+.w-mobile{
+  display: none;
+}
+
 
 .flex-wrap-box{
   padding: 0;
+  border: none;
   margin: 0;
   list-style: none;
   -ms-box-orient: horizontal;
