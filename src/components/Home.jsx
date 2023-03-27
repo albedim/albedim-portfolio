@@ -29,7 +29,7 @@ export const Home = () => {
     <>
       <div style={{ alignItems: 'center', justifyContent: 'space-around', backgroundColor: '#0A192F', height: '100vh', width: '100vw', display: 'flex' }}>
         <div>
-          <div><h2 className='color1' style={{ fontFamily: 'Rubik', fontSize: 34, textAlign: 'center' }}><span className="color2">Hey, </span>I'm Alberto Di Maio</h2></div>
+          <div ><h2 className='color1' style={{ fontFamily: 'Rubik', fontSize: 34, textAlign: 'center' }}><span className="color2">Hey, </span>I'm Alberto Di Maio</h2></div>
           <div style={{ marginTop: 38 }}>
             <TypeAnimation
               className='color1' style={{ fontFamily: 'Rubik', fontSize: 18, textAlign: 'left' }}
@@ -48,7 +48,7 @@ export const Home = () => {
             />
           </div>
           <div style={{ marginTop: 38, height: 140, alignItems: 'center', justifyContent: 'space-around', display: 'flex' }}>
-            <button onClick={(e) => { setStatus(true); setTimeout(() => { window.scrollTo(0, 834) }, 100) }} className='background-color-2' style={{ borderBottomLeftRadius: 4, borderTopRightRadius: 4, outline: 'none', border: 'none', fontFamily: 'Rubik', cursor: 'pointer', paddingRight: 34, paddingLeft: 34, paddingBottom: 14, paddingTop: 14, display: buttonDisplay }}>More</button>
+            <button onClick={(e) => { setStatus(true); setTimeout(() => { window.scrollTo(0, 834) }, 100) }} className='background-color-2' style={{ fontWeight: 500, color: '#0A192F', borderBottomLeftRadius: 4, borderTopRightRadius: 4, outline: 'none', border: 'none', fontFamily: 'Rubik', cursor: 'pointer', paddingRight: 34, paddingLeft: 34, paddingBottom: 14, paddingTop: 14, display: buttonDisplay }}>More</button>
           </div>
         </div>
       </div>

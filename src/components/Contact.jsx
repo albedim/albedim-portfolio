@@ -56,11 +56,11 @@ export const Contact = () => {
       {
         emailForm.name == "" || emailForm.email == "" || emailForm.body == "" ? (
           <div style={{marginTop: 34, alignItems: 'center', display: 'flex', padding: 10}} >
-            <button style={{opacity: '40%', fontFamily: 'Rubik', borderRadius: 4, padding: 12.4, outline: 'none', border: 'none'}} className="background-color-2" >MANDA</button>
+            <button style={{fontWeight: 500, color: '#0A192F', opacity: '40%', fontFamily: 'Rubik', borderRadius: 4, padding: 12.4, outline: 'none', border: 'none'}} className="background-color-2" >MANDA</button>
           </div>
         ):(
           <div style={{marginTop: 34, alignItems: 'center', display: 'flex', padding: 10}} >
-            <a href={"mailto:dimaio.albe@gmail.com?subject=Question&body=From: " + emailForm.name +", " + emailForm.email + "\n" + emailForm.body}><button  onClick={(e) => sendMail()} style={{ fontFamily: 'Rubik', borderRadius: 4, padding: 12.4, outline: 'none', border: 'none'}} className="background-color-2" >MANDA</button></a>
+            <a href={"mailto:dimaio.albe@gmail.com?subject=Question&body=From: " + emailForm.name +", Email:" + emailForm.email + ", Body:" + emailForm.body}><button  onClick={(e) => sendMail()} style={{fontWeight: 500, color: '#0A192F', fontFamily: 'Rubik', borderRadius: 4, padding: 12.4, outline: 'none', border: 'none'}} className="background-color-2" >MANDA</button></a>
           </div>
         )
       }

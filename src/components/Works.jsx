@@ -13,6 +13,7 @@ export const Works = () => {
         "React JS"
       ],
       be_link: "https://github.com/albedim/MyPooling-BE",
+      fe_link: "https://github.com/albedim/MyPooling-FE",
     },
     {
       name: "FightClubMC",
@@ -24,6 +25,7 @@ export const Works = () => {
         "React JS"
       ],
       be_link: "https://github.com/albedim/FightClubMC-BE",
+      fe_link: "https://github.com/albedim/FightClubMC-FE",
     },
     {
       name: "Fryeat",
@@ -35,12 +37,13 @@ export const Works = () => {
         "React JS"
       ],
       be_link: "https://github.com/albedim/Fryeat",
+      fe_link: "https://github.com/albedim/Fryeat-web",
     }
   ])
 
   return (
     works.map(work => (
-      <div className="hover" onClick={(e) => window.location.href = work.be_link} style={{ padding: 24 }}>
+      <div className="hover" style={{ padding: 24 }}>
         <div className="background-color-3" style={{ padding: 34, borderRadius: 8, height: 424, width: 284 }}>
           <div>
             <img style={{ borderRadius: 10, width: 284 }} src={require("./" + work.image)} alt="" />
@@ -59,6 +62,12 @@ export const Works = () => {
                 ))
               }
             </div>
+          </div>
+        </div>
+        <div style={{alignItems: 'center', justifyContent: 'space-around', display: 'flex'}}>
+          <div style={{display: 'flex'}}>
+            <div style={{paddingLeft: 8, paddingRight: 8}}><button onClick={(e) => window.location.href = work.be_link} className="background-color-2" style={{border: "1px solid red", cursor: 'pointer', color: '#0A192F',  fontFamily: 'Rubik', borderBottomRightRadius: 4, borderBottomLeftRadius: 4, outline: 'none', border: 'none', padding: 18}}>Backend</button></div>
+            <div style={{paddingLeft: 8, paddingRight: 8}}><button onClick={(e) => window.location.href = work.fe_link} className="color2" style={{cursor: 'pointer', borderTop: 'none', borderLeft: '1px solid #6FF9DA', borderRight: '1px solid #6FF9DA', backgroundColor: '#0A192F', borderBottom: '1px solid #6FF9DA', fontFamily: 'Rubik', borderBottomRightRadius: 4, borderBottomLeftRadius: 4, outline: 'none', padding: 18}}>Frontend</button></div>
           </div>
         </div>
       </div>
