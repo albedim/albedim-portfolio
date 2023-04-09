@@ -12,32 +12,40 @@ export const Works = () => {
         "MySQL",
         "React JS"
       ],
-      be_link: "https://github.com/albedim/MyPooling-BE",
-      fe_link: "https://github.com/albedim/MyPooling-FE",
+      overview: false,
+      links: {
+        be_link: "https://github.com/albedim/MyPooling-BE",
+        fe_link: "https://github.com/albedim/MyPooling-FE",
+      }
     },
     {
-      name: "FightClubMC",
-      image: "fightclubmc.png",
-      description: "Web app for a minecraft server. Create discussions, answer players' questions and help others",
+      name: "Minehub",
+      image: "minehub.png",
+      description: "Open source project for creating and personalizating the website of your minecraft server",
       languages: [
         "Python (Flask)",
         "MySQL",
         "React JS"
       ],
-      be_link: "https://github.com/albedim/FightClubMC-BE",
-      fe_link: "https://github.com/albedim/FightClubMC-FE",
+      overview: true,
+      links: {
+        overview_link: "https://github.com/albedim/Minehub"
+      }
     },
     {
       name: "Fryeat",
       image: "fryeat.png",
-      description: "Web Application to help family and friends decide what to eat by creating polls",
+      description: "Web Application to help families and friends decide what to eat by creating polls",
       languages: [
-        "Java (Apring Boot)",
+        "Java (Spring Boot)",
         "MySQL",
         "React JS"
       ],
-      be_link: "https://github.com/albedim/Fryeat",
-      fe_link: "https://github.com/albedim/Fryeat-web",
+      overview: false,
+      links: {
+        be_link: "https://github.com/albedim/Fryeat",
+        fe_link: "https://github.com/albedim/Fryeat-web",
+      }
     }
   ])
 
@@ -66,8 +74,16 @@ export const Works = () => {
         </div>
         <div style={{alignItems: 'center', justifyContent: 'space-around', display: 'flex'}}>
           <div style={{display: 'flex'}}>
-            <div style={{paddingLeft: 8, paddingRight: 8}}><button onClick={(e) => window.location.href = work.be_link} className="background-color-2" style={{border: "1px solid red", cursor: 'pointer', color: '#0A192F',  fontFamily: 'Rubik', borderBottomRightRadius: 4, borderBottomLeftRadius: 4, outline: 'none', border: 'none', padding: 18}}>Backend</button></div>
-            <div style={{paddingLeft: 8, paddingRight: 8}}><button onClick={(e) => window.location.href = work.fe_link} className="color2" style={{cursor: 'pointer', borderTop: 'none', borderLeft: '1px solid #6FF9DA', borderRight: '1px solid #6FF9DA', backgroundColor: '#0A192F', borderBottom: '1px solid #6FF9DA', fontFamily: 'Rubik', borderBottomRightRadius: 4, borderBottomLeftRadius: 4, outline: 'none', padding: 18}}>Frontend</button></div>
+            {
+              work.overview ? (
+                <div style={{paddingLeft: 8, paddingRight: 8}}><button onClick={(e) => window.location.href = work.links.overview_link} className="background-color-2" style={{border: "1px solid red", cursor: 'pointer', color: '#0A192F',  fontFamily: 'Rubik', borderBottomRightRadius: 4, borderBottomLeftRadius: 4, outline: 'none', border: 'none', padding: 18}}>Overview</button></div>
+              ):(
+                <>
+                  <div style={{paddingLeft: 8, paddingRight: 8}}><button onClick={(e) => window.location.href = work.links.be_link} className="background-color-2" style={{border: "1px solid red", cursor: 'pointer', color: '#0A192F',  fontFamily: 'Rubik', borderBottomRightRadius: 4, borderBottomLeftRadius: 4, outline: 'none', border: 'none', padding: 18}}>Backend</button></div>
+                  <div style={{paddingLeft: 8, paddingRight: 8}}><button onClick={(e) => window.location.href = work.links.fe_link} className="color2" style={{cursor: 'pointer', borderTop: 'none', borderLeft: '1px solid #6FF9DA', borderRight: '1px solid #6FF9DA', backgroundColor: '#0A192F', borderBottom: '1px solid #6FF9DA', fontFamily: 'Rubik', borderBottomRightRadius: 4, borderBottomLeftRadius: 4, outline: 'none', padding: 18}}>Frontend</button></div>
+                </>
+              )
+            }
           </div>
         </div>
       </div>
