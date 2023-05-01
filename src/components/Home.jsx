@@ -79,8 +79,8 @@ export const Home = () => {
                     <h2 style={{fontFamily: 'Rubik', color: 'white', fontSize: 30 }}>Works</h2>
                   </div>
                 </div>
-                <div style={{marginTop: 74, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
-                  <div className="flex-wrap-box" style={{padding: 84, flexWrap: 'wrap' }}>
+                <div style={{ minHeight: 840, marginTop: 74, justifyContent: 'space-around', backgroundColor: '#0A192F', width: '100vw', display: 'flex' }}>
+                  <div className="flex-wrap-box" style={{ padding: 84, flexWrap: 'wrap' }}>
                     <Works />
                   </div>
                 </div>

@@ -62,4 +62,11 @@ body{
   transition: 0.4s;
 }
 
+input:focus {
+  outline: 2px solid #6FF9DA;
+}
+
+TextArea:focus {
+  outline: 2px solid #6FF9DA;
+}
 

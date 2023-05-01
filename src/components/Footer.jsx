@@ -1,4 +1,5 @@
 import { IonIcon } from "react-ion-icon";
+import { redirect } from "react-router-dom";
 
 export const Footer = () => {
     return (
@@ -6,8 +7,8 @@ export const Footer = () => {
             <div style={{marginTop: 154}}>
                 <div style={{justifyContent: 'space-around', display: 'flex'}}>
                     <div style={{display: 'flex'}}>
-                        <div onClick={(e) => window.location.href = 'https://twitter.com/albe_dim'} style={{cursor: 'pointer', justifyContent: 'space-around', display: 'flex', width: 84}} className="color3"><IonIcon style={{fontSize: 34}} name="logo-twitter" /></div>
-                        <div onClick={(e) => window.location.href = 'https://github.com/albedim'} style={{cursor: 'pointer', justifyContent: 'space-around', display: 'flex', width: 84}} className="color3"><IonIcon style={{fontSize: 34}} name="logo-github" /></div>
+                        <a target="_blank" href="https://twitter.com/albe_dim"><div style={{cursor: 'pointer', justifyContent: 'space-around', display: 'flex', width: 84}} className="color3"><IonIcon style={{fontSize: 34}} name="logo-twitter" /></div></a>
+                        <a target="_blank" href="https://github.com/albedim"><div style={{cursor: 'pointer', justifyContent: 'space-around', display: 'flex', width: 84}} className="color3"><IonIcon style={{fontSize: 34}} name="logo-github" /></div></a>
                     </div>
                 </div>
                 <div>

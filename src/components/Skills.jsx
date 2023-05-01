@@ -3,13 +3,14 @@ import { useEffect, useState } from "react";
 export const Skills = () => {
 
   const [skills, setSkills] = useState([
-    { label: "React JS", value: "64%" },
-    { label: "React Native", value: "40%" },
     { label: "Python (Flask)", value: "78%" },
     { label: "Java (Spring)", value: "74%" },
-    { label: "MySQL", value: "64%" },
+    { label: "Node JS", value: "54%" },
     { label: "PHP", value: "43%" },
-    { label: "REST SERVICE", value: "78%" },
+    { label: "MySQL", value: "64%" },
+    { label: "MongoDB", value: "54%" },
+    { label: "React JS", value: "64%" },
+    { label: "React Native", value: "40%" },
   ])
 
   const [width, setWidth] = useState(false)
