@@ -21,7 +21,7 @@ function App() {
     {
       name: "HTML",
       icon: <ImHtmlFive opacity={"80%"} size={54} color='#b0b0b0' />,
-      value: "80%"
+      value: "94%"
     },
     {
       name: "CSS",
@@ -31,12 +31,12 @@ function App() {
     {
       name: "Javascript",
       icon: <IoLogoJavascript opacity={"80%"} size={54} color='#b0b0b0' />,
-      value: "80%"
+      value: "70%"
     },
     {
       name: "Typescript",
       icon: <BiLogoTypescript opacity={"80%"} size={54} color='#b0b0b0' />,
-      value: "80%"
+      value: "70%"
     },
     {
       name: "React JS",
@@ -46,42 +46,42 @@ function App() {
     {
       name: "TailwindCss",
       icon: <BiLogoTailwindCss opacity={"80%"} size={54} color='#b0b0b0' />,
-      value: "80%"
+      value: "50%"
     },
     {
       name: "Python",
       icon: <BiLogoPython opacity={"80%"} size={54} color='#b0b0b0' />,
-      value: "80%"
+      value: "94%"
     },
     {
       name: "Flask",
       icon: <BiLogoFlask opacity={"80%"} size={54} color='#b0b0b0' />,
-      value: "80%"
+      value: "94%"
     },
     {
       name: "Java",
       icon: <FaJava opacity={"80%"} size={54} color='#b0b0b0' />,
-      value: "80%"
+      value: "84%"
     },
     {
       name: "Spring Boot",
       icon: <BiLogoSpringBoot opacity={"80%"} size={54} color='#b0b0b0' />,
-      value: "80%"
+      value: "75%"
     },
     {
       name: "MySQL",
       icon: <SiMysql opacity={"80%"} size={54} color='#b0b0b0' />,
-      value: "80%"
+      value: "70%"
     },
     {
       name: "MongoDb",
       icon: <BiLogoMongodb opacity={"80%"} size={54} color='#b0b0b0' />,
-      value: "80%"
+      value: "45%"
     },
     {
       name: "PHP",
       icon: <BiLogoPhp opacity={"80%"} size={54} color='#b0b0b0' />,
-      value: "80%"
+      value: "50%"
     }
   ])
   const [menu, setMenu] = useState(false)
@@ -291,13 +291,13 @@ function App() {
                 <h2 style={{ maxWidth: 940 }} className='mt-14 text-lg text-[#b0b0b0] font-regular font-p'>
                   My name is Alberto I'm Italian, 18 years old. I like to describe myself using two adjectives: Creative and courius. Since I was a child i have been interested in almost anything I tried.
                   <br /><br />I've always loved to try new things and <span className='text-[#4ca14c]' >challange myself</span> because I think it's the only thing that can make you grow. I changed passions and hobbies a lot in my life because as I said, I've always liked anything I tried but none was the passion that I wanted to turn into my job.
-                  <br /><br />One year ago I started getting passionated of technology and after years of designing and video making I started to code and make little websites. After 4 months I understood that wasn't a passion, but <span className='text-[#4ca14c]' >THE PASSION</span>. I realised I was good at it and contnued learning.
+                  <br /><br />One year ago I started getting passionated of technology and after years of designing and video making I started to code and make little websites. After 4 months I understood that wasn't a passion, but <span className='text-[#4ca14c]' >THE PASSION</span>. I realised I was good at it and continued learning.
                   <br /><br />After One year, I have made so many projects and improved my skills a lot. I've recently started making money with my passion creating online businesses. I also work as freelance developer. I like my job and that's the most important thing
                 </h2>
                 <TypeAnimation
                   className='italic mt-14 text-lg text-[#b0b0b0] font-regular font-p'
                   sequence={[
-                    "''FFind a job you enjoy doing, and you will never have to work a day in your life.''", // Types 'One'
+                    "''Find a job you enjoy doing, and you will never have to work a day in your life.''", // Types 'One'
                     2400, // Waits 1s,
                     "",
                     () => {
