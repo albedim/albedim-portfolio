@@ -151,16 +151,6 @@ function App() {
   const [selectedPage, setSelectedPage] = useState("home")
 
   useEffect(() => {
-    var c = 0
-    setInterval(() => {
-      setHover(skills[c].name)
-      c++
-      if (c == skills.length)
-        c = 0
-    }, 2400)
-  }, [])
-
-  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
@@ -337,7 +327,7 @@ function App() {
                         </div>
                       </div>
                     ) : (
-                      <div className='pb-1 p-10'>
+                      <div onMouseEnter={() => setHover(skill.name)} className='pb-1 p-10'>
                         {skill.icon}
                       </div>
                     )
