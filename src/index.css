@@ -86,3 +86,7 @@ body{
 .header{
   width: 60%;
 }
+
+.tr{
+  transition: 0.4s;
+}

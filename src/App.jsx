@@ -103,7 +103,7 @@ function App() {
       links: {
         overview: true,
         code: false,
-        link_overview: "https://sturl-web.pages.dev",
+        link_overview: "https://sturl.pages.dev",
         link_github: ""
       },
       image: "sturl.png"
@@ -230,7 +230,7 @@ function App() {
                   <div style={{ backgroundColor: selectedPage == 'skills' ? '#4ca14c' : 'transparent' }} className='h-1' ></div>
                 </div>
               </li>
-              <li onClick={() => { setSelectedPage("projects"); window.scrollTo({ top: 2654, left: 0, behavior: "smooth" }) }} style={{ color: selectedPage == 'projects' ? 'white' : 'gray' }} className={'cursor-pointer items-center flex ml-8 font-medium font-p'}>
+              <li onClick={() => { setSelectedPage("projects"); window.scrollTo({ top: 2545, left: 0, behavior: "smooth" }) }} style={{ color: selectedPage == 'projects' ? 'white' : 'gray' }} className={'cursor-pointer items-center flex ml-8 font-medium font-p'}>
                 <div>
                   Projects
                   <div style={{ backgroundColor: selectedPage == 'projects' ? '#4ca14c' : 'transparent' }} className='h-1' ></div>
@@ -313,8 +313,8 @@ function App() {
                 {
                   skills.map(skill => (
                     hover == skill.name ? (
-                      <div className='p-8'>
-                        <div onMouseLeave={() => setHover("")} className='transition-shadow rounded-lg bg-[#152415]'>
+                      <div className='mt-10'>
+                        <div onMouseLeave={() => setHover("")} className='rounded-lg bg-[#152415]'>
                           <div className='pb-1 p-10'>
                             {skill.icon}
                           </div>
@@ -327,7 +327,7 @@ function App() {
                         </div>
                       </div>
                     ) : (
-                      <div onMouseEnter={() => setHover(skill.name)} className='pb-1 p-10'>
+                      <div onMouseEnter={() => setHover(skill.name)} className='tr mt-10 pb-1 p-10'>
                         {skill.icon}
                       </div>
                     )
@@ -381,7 +381,7 @@ function App() {
                           <div className='flex-block pt-14'>
                             {
                               project.links.overview &&
-                              <div className='p-2'><a target='_blank' href={project.links.link_overview}><button className='hover:bg-[#3d9c3d] transition-all hover:mt-2 items-center flex rounded-md p-4 text-[white] bg-[#4ca14c] font-medium font-p' ><div className='pr-2'><TbUnlink size={24} /></div> Live</button></a></div>
+                              <div className='p-2'><a target='_blank' href={project.links.link_overview}><button className='hover:bg-[#3d9c3d] transition-all hover:mt-2 items-center flex rounded-md p-4 text-[white] bg-[#4ca14c] font-medium font-p' ><div className='pr-2'><TbUnlink size={24} /></div> Website</button></a></div>
                             }
                             {
                               project.links.code &&
