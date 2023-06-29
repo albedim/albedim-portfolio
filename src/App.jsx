@@ -303,7 +303,7 @@ function App() {
           </div>
         </div>
         <div>
-          <div style={{ height: 740, paddingTop: 184 }}>
+          <div className='h-icons' style={{ paddingTop: 184 }}>
             <div>
               <h2 style={{ color: 'white' }} className={'mt-2 text-5xl font-bold font-p'}>
                 Skills
@@ -327,7 +327,7 @@ function App() {
                         </div>
                       </div>
                     ) : (
-                      <div onMouseEnter={() => setHover(skill.name)} className='tr mt-10 pb-1 p-10'>
+                      <div onMouseEnter={() => setHover(skill.name)} className='mt-10 pb-1 p-10'>
                         {skill.icon}
                       </div>
                     )

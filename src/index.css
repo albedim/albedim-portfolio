@@ -24,6 +24,9 @@ body{
   .screen-w{
     width: 90% !important;
   }
+  .h-icons{
+    height: 1254px !important;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -89,4 +92,8 @@ body{
 
 .tr{
   transition: 0.4s;
+}
+
+.h-icons{
+  height: 654px;
 }
