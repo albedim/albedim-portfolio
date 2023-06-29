@@ -303,7 +303,7 @@ function App() {
           </div>
         </div>
         <div>
-          <div style={{ paddingBottom: 184, paddingTop: 184 }}>
+          <div style={{ height: 140, paddingTop: 184 }}>
             <div>
               <h2 style={{ color: 'white' }} className={'mt-2 text-5xl font-bold font-p'}>
                 Skills
