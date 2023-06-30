@@ -89,7 +89,7 @@ function App() {
   const [hover, setHover] = useState("")
   const [projects, setProjects] = useState([
     {
-      name: "Sturl",
+      name: "Deleafly",
       right: false,
       icons: [
         <GrReactjs opacity={"80%"} size={28} color='#b0b0b0' />,
@@ -103,10 +103,10 @@ function App() {
       links: {
         overview: true,
         code: false,
-        link_overview: "https://sturl.pages.dev",
+        link_overview: "https://deleafly.pages.dev",
         link_github: ""
       },
-      image: "sturl.png"
+      image: "deleafly.png"
     },
     {
       name: "Cryllet",
