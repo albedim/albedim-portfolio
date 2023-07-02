@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import { TfiMenu } from 'react-icons/tfi'
 import { TbUnlink } from 'react-icons/tb'
 import { BiLogoSpringBoot, BiLogoFlask, BiLogoPython, BiLogoTailwindCss, BiLogoPhp, BiLogoMongodb, BiLogoTypescript, BiSolidEdit } from 'react-icons/bi'
-import { SiMongodb, SiMysql, SiTwitter } from 'react-icons/si'
+import { SiExpress, SiMongodb, SiMysql, SiPostgresql, SiTwitter } from 'react-icons/si'
 import { FaJava, FaLaptopCode } from 'react-icons/fa'
 import { IoLogoJavascript, IoMdClose } from 'react-icons/io'
 import { GrClose, GrReactjs } from 'react-icons/gr'
@@ -74,6 +74,11 @@ function App() {
       value: "70%"
     },
     {
+      name: "PostgreSQL",
+      icon: <SiPostgresql opacity={"80%"} size={54} color='#b0b0b0' />,
+      value: "70%"
+    },
+    {
       name: "MongoDb",
       icon: <BiLogoMongodb opacity={"80%"} size={54} color='#b0b0b0' />,
       value: "45%"
@@ -82,6 +87,11 @@ function App() {
       name: "PHP",
       icon: <BiLogoPhp opacity={"80%"} size={54} color='#b0b0b0' />,
       value: "50%"
+    },
+    {
+      name: "Express.js",
+      icon: <SiExpress opacity={"80%"} size={54} color='#b0b0b0' />,
+      value: "60%"
     }
   ])
   const [menu, setMenu] = useState(false)
